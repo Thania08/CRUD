@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CRUD</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/zephyr/bootstrap.css">
+</head>
+<body class="bg-dark">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="h4">Bloc de tareas</h1>
+                            <form id="task-form">
+
+                                <label for="title">Título:</label>
+                                <input class="form-control mb-3" type="text" placeholder="Título de la tarea" id="task-title">
+                            
+                                <label for="description">Descripción</label>
+                                <textarea class="form-control mb-3" id="task-description" rows="3" placeholder="Descripción de la tarea"></textarea>
+                                <input type="file" name="file-task" id="file-task">
+                                <progress class="progress is primary" id="progress" value="" max="100"></progress>
+                                <img src="" alt="" id="image" width="100px">
+
+
+                                <button class="btn btn-outline-light" id="btn-task-save">Save</button>
+                        
+                            </form>
+                    </div>
+                </div>
+            </div>
+
+    <div class="col-md-6" id="task-container"></div>
+
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+    
+</body>
+</html>
